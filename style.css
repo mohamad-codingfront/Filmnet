@@ -187,8 +187,10 @@ main {
     padding: 16px;
 }
 
-.item {
+.last-content-image .item img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .footer {
@@ -322,12 +324,6 @@ hr {
         gap: 16px;
         padding: initial;
         align-items: initial;
-    }
-
-    .last-content-image .item img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
     }
 
     .last-content-image .item:first-child {

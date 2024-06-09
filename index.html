@@ -21,12 +21,12 @@
                         <img src="./images/logo.svg" class="logo-head" alt="Logo">
 
                         <ul class="menu">
-                            <li>فیلم</li>
-                            <li>سریال</li>
-                            <li>دسته بندی</li>
-                            <li>کودک و نوجوان</li>
-                            <li>ایرانی</li>
-                            <li>سینما آنلاین</li>
+                            <li class="menu-item">فیلم</li>
+                            <li class="menu-item">سریال</li>
+                            <li class="menu-item">دسته بندی</li>
+                            <li class="menu-item">کودک و نوجوان</li>
+                            <li class="menu-item">ایرانی</li>
+                            <li class="menu-item">سینما آنلاین</li>
                         </ul>
                     </div>
                     <div class="mobile-menu">
@@ -36,22 +36,33 @@
                     <div class="sub-header">
                         <img src="./images/icons/search.svg" alt="Search" width="24px" height="24px">
                         <button class="btn button">خرید اشتراک</button>
-                        <button class="btn butt">ورود</button>
+                        <button onclick="toggle('modal')" class="btn butt">ورود</button>
                     </div>
-                </header>
+                    <div class="modal">
+                        <div class="content">
+                            <form>
+                                <label>firstname:</label>
+                                <input type="text">
 
-            </div>
-            <div class="image-content">
-                <img src="./images/Image (1).png" alt="Father">
-            </div>
-            <div class="buttons">
-                <button class="button-heading button-time">30 : 07 : 07 : 00</button>
-                <button class="button-heading button-text">
-                    <img src="./images/icons/SVG.png" alt="Svg">
-                    <span>اطلاعات بیشتر</span>
-                </button>
+                                <label>lastname:</label>
+                                <input type="text">
+                            </form>
+                            <button onclick="toggle('modal')">Close Modal</button>
+                        </div>
+                </header>
             </div>
         </div>
+        <div class="image-content">
+            <img src="./images/Image (1).png" alt="Father">
+        </div>
+        <div class="buttons">
+            <button class="button-heading button-time">30 : 07 : 07 : 00</button>
+            <button class="button-heading button-text">
+                <img src="./images/icons/SVG.png" alt="Svg">
+                <span>اطلاعات بیشتر</span>
+            </button>
+        </div>
+    </div>
 
     </div>
 
@@ -141,6 +152,12 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        function toggle(className) {
+            document.getElementsByClassName(className)[0].classList.toggle("open")
+        }
+    </script>
 </body>
 
 </html>

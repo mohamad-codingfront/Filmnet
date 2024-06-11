@@ -326,10 +326,11 @@ hr {
     }
 
     .buttons {
-        flex-direction: column;
+        flex-direction: row;
         right: initial;
         margin-inline-start: 16px;
         gap: 16px;
+        top: 450px;
     }
 
     .main-header {
@@ -357,6 +358,7 @@ hr {
         right: initial;
         padding-inline-start: 20px;
         background: initial;
+        top: 320px;
     }
 
 

@@ -114,6 +114,18 @@ header {
     cursor: pointer;
 }
 
+.cards {
+    display: none;
+}
+
+.list:hover .cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 300px;
+    padding-top: 50px;
+    flex: 1;
+}
 
 .mobile-menu {
     display: none;
@@ -292,6 +304,25 @@ hr {
     color: var(--color-white);
     font-size: 12px;
 }
+
+.movie {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.movie .imdb a {
+    color: var(--color-white);
+    text-decoration: none;
+    padding-inline-end: 16px;
+    cursor: pointer;
+}
+
+.movie .imdb a:hover {
+
+    color: #848f99;
+}
+
 
 @media screen and (max-width:768px) {
     .hero {

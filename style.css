@@ -139,7 +139,7 @@ header {
 
 .image-content {
     position: absolute;
-    bottom: 130px;
+    top: 400px;
     right: 100px;
     background: linear-gradient(270deg, #1C1C1C 0%, rgba(0, 0, 0, 0) 100%);
 }
@@ -172,7 +172,7 @@ header {
 
 .buttons {
     position: absolute;
-    bottom: 20px;
+    top: 550px;
     right: 100px;
     display: flex;
 
